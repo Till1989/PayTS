@@ -39,7 +39,7 @@ vidSrv.channels[chanIndex].videos[vidIndex].description="ууууффффффф�
 
 /*******************************************************************************************************/
 
-vidSrv.channels[vidSrv.channels.findIndex(ch=>ch.name=="ВелоМотоОгород")].Subscribe(usr);
+//vidSrv.channels[vidSrv.channels.findIndex(ch=>ch.name=="ВелоМотоОгород")].Subscribe(usr);
 //vidSrv.channels[vidSrv.channels.findIndex(ch=>ch.name=="ВелоМотоОгород")].Unsubscribe(usr);
 
 /*******************************************************************************************************/
