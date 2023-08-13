@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "downlevelIteration": true,
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "lib": ["es2020", "dom", "dom.iterable"],
+      "baseUrl": ".",
+      "noImplicitAny": true,
+      //"suppressImplicitAnyIndexErrors": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "useDefineForClassFields": false
+    }
+  }
