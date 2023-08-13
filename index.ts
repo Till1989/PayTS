@@ -44,7 +44,7 @@ vidSrv.channels[vidSrv.channels.findIndex(ch=>ch.name=="ВелоМотоОгор
 
 /*******************************************************************************************************/
 
-//chanIndex=vidSrv.channels.findIndex(ch=>ch.name=="ВелоМотоОгород");
+chanIndex=vidSrv.channels.findIndex(ch=>ch.name=="ВелоМотоОгород");
 vidIndex=vidSrv.channels[chanIndex].videos.findIndex(vid=>vid.name=="Посадил и офигел! 100% работает! Не спам!");
 
 vidSrv.channels[chanIndex].videos[vidIndex].Like(usr);
