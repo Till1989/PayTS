@@ -5,6 +5,7 @@ import { PaySystem } from "./classes/PaySystem.js";
 import { Card } from "./classes/Card.js";
 import { User } from "./classes/User.js";
 import { PosTerminal } from "./classes/PosTerminal.js";
+import { Business } from "./classes/Busyness.js";
 
 
 let privat = new Bank("PrivatBank","Ukraine");
@@ -24,6 +25,7 @@ usr.addCard(privatCard);
 usr.addCard(reifCard);
 
 let pos = new PosTerminal(privat);
-
+let busines = new Business("dfmgjhm",pos);
 
 console.log(usr);
+console.log(busines);
