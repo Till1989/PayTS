@@ -4,8 +4,12 @@ class Card{
     expDate: string;
     paySystem:PaySystem;
     issuerBank: Bank;
-    constructor()
+    constructor(number: number, cvv: number,expDate: string,paySystem:PaySystem,issuerBank: Bank)
     {
-
+        this.number=number;
+        this.cvv=cvv;
+        this.expDate=expDate;
+        this.paySystem=paySystem;
+        this.issuerBank=issuerBank;
     }
 }
