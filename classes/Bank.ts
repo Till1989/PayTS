@@ -11,15 +11,16 @@ export class Bank{
     {
         this.sendPaydata(data);
     }
-    sendPaydata(data: any[]=[]): void
+    sendPaydata(data: any[]=[]): boolean
     {
        if(data[0].balance>=data[1])
        {
-        
+        if(data[0].paySystem.pay())
+        {
+            data[0].balance-=data[1];
+            return true;
+        }
        }
-       else
-       {
-        //
-       } 
+
     }
 }

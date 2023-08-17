@@ -8,9 +8,10 @@ export class Bank {
     }
     sendPaydata(data = []) {
         if (data[0].balance >= data[1]) {
-        }
-        else {
-            //
+            if (data[0].paySystem.pay()) {
+                data[0].balance -= data[1];
+                return true;
+            }
         }
     }
 }

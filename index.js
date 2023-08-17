@@ -22,8 +22,9 @@ console.log(usr);
 console.log(busines);
 let data = [];
 data.push(usr.cards[1]);
-data.push(200);
+data.push(1200);
 data.push(busines);
 data.push(busines.terminal.bank);
 pos.sendPaydata(data);
+console.log(usr.cards[1].balance);
 //# sourceMappingURL=index.js.map
