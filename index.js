@@ -1,4 +1,5 @@
 //LET PAY
+import { Bank } from "./classes/Bank.js";
 let privat = new Bank("PrivatBank", "Ukraine");
 let reif = new Bank("ReiffeisenBank", "Ukraine");
 let paySysV = new PaySystem("VISA", "xdfgdfgvfv");
