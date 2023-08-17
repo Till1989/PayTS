@@ -6,6 +6,7 @@ import { Card } from "./classes/Card.js";
 import { User } from "./classes/User.js";
 import { PosTerminal } from "./classes/PosTerminal.js";
 import { Business } from "./classes/Busyness.js";
+import { pay } from "./functions/payment.js";
 
 
 let privat = new Bank("PrivatBank","Ukraine");
@@ -29,3 +30,12 @@ let busines = new Business("dfmgjhm",pos);
 
 console.log(usr);
 console.log(busines);
+
+
+let data: any[]=[];
+data.push(usr.cards[1]);
+data.push(200);
+data.push(busines);
+data.push(busines.terminal.bank);
+
+usr.pay(data);

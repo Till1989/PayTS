@@ -6,4 +6,5 @@ export class PosTerminal{
     {
         this.bank=bank;
     }
+    
 }

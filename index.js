@@ -20,4 +20,10 @@ let pos = new PosTerminal(privat);
 let busines = new Business("dfmgjhm", pos);
 console.log(usr);
 console.log(busines);
+let data = [];
+data.push(usr.cards[1]);
+data.push(200);
+data.push(busines);
+data.push(busines.terminal.bank);
+usr.pay(data);
 //# sourceMappingURL=index.js.map
