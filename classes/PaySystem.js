@@ -1,4 +1,4 @@
-class PaySystem {
+export class PaySystem {
     constructor(name, serverAdress) {
         this.name = name;
         this.serverAdress = serverAdress;

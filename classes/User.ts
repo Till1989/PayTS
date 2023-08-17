@@ -1,6 +1,7 @@
-class User {
+import { Card } from "./Card.js";
+export class User {
     name: string;
-    cards: Card[];
+    cards: Card[]=[];
     constructor(name:string) {
         this.name=name;
     }

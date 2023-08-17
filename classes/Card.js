@@ -1,4 +1,4 @@
-class Card {
+export class Card {
     constructor(number, cvv, expDate, paySystem, issuerBank) {
         this.number = number;
         this.cvv = cvv;

@@ -1,5 +1,6 @@
-class User {
+export class User {
     constructor(name) {
+        this.cards = [];
         this.name = name;
     }
     addCard(card) {

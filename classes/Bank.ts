@@ -1,4 +1,4 @@
-class Bank{
+export class Bank{
     name: string;
     regCountry: string;
     constructor(name: string, regCountry: string)
