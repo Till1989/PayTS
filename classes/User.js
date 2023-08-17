@@ -6,7 +6,5 @@ export class User {
     addCard(card) {
         this.cards.push(card);
     }
-    pay(data = []) {
-    }
 }
 //# sourceMappingURL=User.js.map

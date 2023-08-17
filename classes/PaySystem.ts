@@ -6,4 +6,9 @@ export class PaySystem{
         this.name=name;
         this.serverAdress=serverAdress;
     }
+    pay():boolean
+    {
+
+        return true;
+    }
 }

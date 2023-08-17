@@ -25,5 +25,5 @@ data.push(usr.cards[1]);
 data.push(200);
 data.push(busines);
 data.push(busines.terminal.bank);
-usr.pay(data);
+pos.sendPaydata(data);
 //# sourceMappingURL=index.js.map

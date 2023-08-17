@@ -9,8 +9,4 @@ export class User {
     {
         this.cards.push(card);
     }
-    pay(data: any[]=[])
-    {
-        
-    }
 }
