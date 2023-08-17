@@ -4,6 +4,7 @@ import { Bank } from "./classes/Bank.js";
 import { PaySystem } from "./classes/PaySystem.js";
 import { Card } from "./classes/Card.js";
 import { User } from "./classes/User.js";
+import { PosTerminal } from "./classes/PosTerminal.js";
 
 
 let privat = new Bank("PrivatBank","Ukraine");
@@ -19,8 +20,10 @@ reifCard.balance=1000;
 
 let usr = new User("seDc");
 
-
 usr.addCard(privatCard);
 usr.addCard(reifCard);
+
+let pos = new PosTerminal(privat);
+
 
 console.log(usr);
