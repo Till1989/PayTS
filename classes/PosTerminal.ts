@@ -1,13 +1,14 @@
 import { Bank } from "./Bank";
 
-export class PosTerminal{
+export class POSTerminal{
     bank: Bank;
+    operResult: string;
     constructor(bank: Bank)
     {
         this.bank=bank;
     }
-    sendPaydata(data: any[]=[]): void
+    senddata(data: any[]=[], bank: Bank): void
     {
-        data[data.length-1].receivePaydata(data);
+        
     }
 }

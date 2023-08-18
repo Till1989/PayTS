@@ -1,4 +1,4 @@
-export class PosTerminal {
+export class POSTerminal {
     constructor(bank) {
         this.bank = bank;
     }

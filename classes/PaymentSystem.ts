@@ -1,4 +1,4 @@
-export class PaySystem{
+export class PaymentSystem{
     name: string;
     serverAdress: string;
     constructor(name: string,serverAdress: string)

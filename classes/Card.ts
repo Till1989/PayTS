@@ -1,19 +1,20 @@
 import { Bank } from "./Bank.js";
-import { PaySystem } from "./PaySystem.js";
+import { PaymentSystem } from "./PaymentSystem.js";
+import {Customer} from "./Customer.js";
 
 export class Card{
     number: number;
     cvv: number;
     expDate: string;
-    paySystem:PaySystem;
+    paymentSystem:PaymentSystem;
     issuerBank: Bank;
-    balance: number;
-    constructor(number: number, cvv: number,expDate: string,paySystem:PaySystem,issuerBank: Bank)
+    customer: Customer;
+    constructor(number: number, cvv: number,expDate: string, paymentSystem: PaymentSystem, issuerBank: Bank)
     {
         this.number=number;
         this.cvv=cvv;
         this.expDate=expDate;
-        this.paySystem=paySystem;
+        this.paymentSystem=paymentSystem;
         this.issuerBank=issuerBank;
     }
 }
