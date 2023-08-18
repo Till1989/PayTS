@@ -27,25 +27,25 @@ reifBank.addCard(new Card(5654,453,"0890",mastercard,reifBank,vasia));
 shop.addPOSTerminal(new POSTerminal(reifBank));
 
 /******************************************************* */
-let userCardIndex=privatBank.cards.findIndex(crd=>crd.number==123);
+let userCardIndex=reifBank.cards.findIndex(crd=>crd.number==5653);
 
-let userCard = privatBank.cards[userCardIndex];
+let userCard = reifBank.cards[userCardIndex];
 
 let busCardIndex=reifBank.cards.findIndex(crd=>crd.number==456);
 
 let busCard = reifBank.cards[busCardIndex];
 
 
-privatBank.cards[0].balance=4000;
+reifBank.cards[userCardIndex].balance=4000;
 let data: any[]=[];
-data.push(userCard,4001,busCard);
+data.push(userCard,4000,busCard);
 
 /*************************************************************** */
 
 
 shop.POSTerminal[0].sendData(data);//(1)pos to pos bank
 shop.POSTerminal[0].bank.sendData(shop.POSTerminal[0].bank.data,userCard.issuerBank);//(2) pos bank to card bank
-userCard.issuerBank.operResult = userCard.issuerBank.checkBalance(userCard.issuerBank.data);//(3) chacking balance to amount
+userCard.issuerBank.operResult = userCard.issuerBank.checkBalance(userCard.issuerBank.data);//(3) checking balance to amount
 
 if(userCard.issuerBank.operResult=="Balance Ok")//(4)
 {
