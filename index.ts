@@ -37,12 +37,11 @@ let busCard = reifBank.cards[busCardIndex];
 
 
 privatBank.cards[0].balance=4000;
+let data: any[]=[];
+data.push(userCard,20047450,busCard);
 
 /*************************************************************** */
 
-
-let data: any[]=[];
-data.push(userCard,20047450,busCard);
 
 shop.POSTerminal[0].sendData(data);//(1)pos to pos bank
 shop.POSTerminal[0].bank.sendData(shop.POSTerminal[0].bank.data,userCard.issuerBank);//(2) pos bank to card bank
