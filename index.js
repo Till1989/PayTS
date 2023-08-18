@@ -34,7 +34,7 @@ if (userCard.issuerBank.operResult == "Balance Ok") //(4)
     userCard.paymentSystem.returnResult(userCard.issuerBank); //(6)
 }
 userCard.issuerBank.retResToBank(shop.POSTerminal[0].bank, userCard.issuerBank.operResult); //(7)
-shop.POSTerminal[0].bank.retResToPOS(shop.POSTerminal[0], shop.POSTerminal[0].bank.operResult);
+shop.POSTerminal[0].bank.retResToPOS(shop.POSTerminal[0], shop.POSTerminal[0].bank.operResult); //(8)
 console.log(shop.POSTerminal[0].operResult);
 //console.log(privatBank, reifBank);
 //# sourceMappingURL=index.js.map
