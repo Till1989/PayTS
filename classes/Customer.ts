@@ -14,7 +14,7 @@ export class User extends Customer{
 }
 export class Business extends Customer
 {
-    POSTerminal: POSTerminal[];
+    POSTerminal: POSTerminal[]=[];
     
     addPOSTerminal(POSTerminal: POSTerminal): void
     {

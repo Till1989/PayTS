@@ -9,12 +9,13 @@ export class Card{
     paymentSystem:PaymentSystem;
     issuerBank: Bank;
     customer: Customer;
-    constructor(number: number, cvv: number,expDate: string, paymentSystem: PaymentSystem, issuerBank: Bank)
+    constructor(number: number, cvv: number,expDate: string, paymentSystem: PaymentSystem, issuerBank: Bank, customer: Customer)
     {
         this.number=number;
         this.cvv=cvv;
         this.expDate=expDate;
         this.paymentSystem=paymentSystem;
         this.issuerBank=issuerBank;
+        this.customer=customer;
     }
 }

@@ -1,18 +1,23 @@
 export class Bank {
     constructor(name, regCountry) {
+        this.cards = [];
+        this.data = [];
         this.name = name;
         this.regCountry = regCountry;
     }
-    receivePaydata(data = []) {
-        this.sendPaydata(data);
+    addCard(card) {
+        this.cards.push(card);
     }
-    sendPaydata(data = []) {
-        if (data[0].balance >= data[1]) {
-            if (data[0].paySystem.pay()) {
-                data[0].balance -= data[1];
-                return true;
-            }
-        }
+    retResToBank(bank, operResult) {
+    }
+    retResToPOS(POSTerminal, operResult) {
+    }
+    sendData(data = [], bank) {
+    }
+    paymentRequest(data = [], paymentSystem) {
+    }
+    checkBalance(data = []) {
+        return;
     }
 }
 //# sourceMappingURL=Bank.js.map

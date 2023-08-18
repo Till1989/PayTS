@@ -2,8 +2,7 @@ export class POSTerminal {
     constructor(bank) {
         this.bank = bank;
     }
-    sendPaydata(data = []) {
-        data[data.length - 1].receivePaydata(data);
+    senddata(data = [], bank) {
     }
 }
-//# sourceMappingURL=PosTerminal.js.map
+//# sourceMappingURL=POSTerminal.js.map

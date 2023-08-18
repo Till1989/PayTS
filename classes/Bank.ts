@@ -4,7 +4,7 @@ import { PaymentSystem } from "./PaymentSystem.js";
 export class Bank{
     name: string;
     regCountry: string;
-    cards: Card;
+    cards: Card[]=[];
     data: any[]=[];
     operResult: string;
     constructor(name: string, regCountry: string)
@@ -14,7 +14,7 @@ export class Bank{
     }
     addCard(card: Card): void
     {
-
+        this.cards.push(card);
     }
     retResToBank(bank: Bank, operResult: string): void
     {
