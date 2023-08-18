@@ -22,7 +22,7 @@ let busCardIndex = reifBank.cards.findIndex(crd => crd.number == 456);
 let busCard = reifBank.cards[busCardIndex];
 privatBank.cards[0].balance = 4000;
 let data = [];
-data.push(userCard, 20047450, busCard);
+data.push(userCard, 4001, busCard);
 /*************************************************************** */
 shop.POSTerminal[0].sendData(data); //(1)pos to pos bank
 shop.POSTerminal[0].bank.sendData(shop.POSTerminal[0].bank.data, userCard.issuerBank); //(2) pos bank to card bank
