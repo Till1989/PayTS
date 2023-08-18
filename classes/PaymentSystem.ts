@@ -10,16 +10,17 @@ export abstract class PaymentSystem{
         this.name=name;
         this.serverAdress=serverAdress;
     }
-    abstract transaction():string;
+    abstract transaction(data: any[]): string;
     returnResult(bank: Bank): void
     {
-
+        bank.operResult=this.transResult;
     }
 }
 
 export class VISA extends PaymentSystem{
     transaction(data: any[]=[]): string
     {
+        
         return "OK";
     }
 }

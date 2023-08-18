@@ -18,11 +18,11 @@ export class Bank{
     }
     retResToBank(bank: Bank, operResult: string): void
     {
-
+        bank.operResult=operResult;
     }
     retResToPOS(POSTerminal: POSTerminal, operResult: string): void
     {
-
+        POSTerminal.operResult=operResult;
     }
     sendData(data: any[]=[], bank: Bank): void
     {

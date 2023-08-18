@@ -5,6 +5,7 @@ export class PaymentSystem {
         this.serverAdress = serverAdress;
     }
     returnResult(bank) {
+        bank.operResult = this.transResult;
     }
 }
 export class VISA extends PaymentSystem {

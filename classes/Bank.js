@@ -9,8 +9,10 @@ export class Bank {
         this.cards.push(card);
     }
     retResToBank(bank, operResult) {
+        bank.operResult = operResult;
     }
     retResToPOS(POSTerminal, operResult) {
+        POSTerminal.operResult = operResult;
     }
     sendData(data = [], bank) {
         bank.data = data;
