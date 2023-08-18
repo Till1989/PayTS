@@ -9,6 +9,7 @@ export class Card{
     paymentSystem:PaymentSystem;
     issuerBank: Bank;
     customer: Customer;
+    balance: number;
     constructor(number: number, cvv: number,expDate: string, paymentSystem: PaymentSystem, issuerBank: Bank, customer: Customer)
     {
         this.number=number;
@@ -17,5 +18,6 @@ export class Card{
         this.paymentSystem=paymentSystem;
         this.issuerBank=issuerBank;
         this.customer=customer;
+        this.balance=1000;
     }
 }

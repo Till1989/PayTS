@@ -1,6 +1,6 @@
 import { Bank } from "./Bank.js";
 
-export class PaymentSystem{
+export abstract class PaymentSystem{
     name: string;
     serverAdress: string;
     data: any[]=[];
@@ -10,6 +10,7 @@ export class PaymentSystem{
         this.name=name;
         this.serverAdress=serverAdress;
     }
+    abstract transaction():string;
     returnResult(bank: Bank): void
     {
 
@@ -17,14 +18,14 @@ export class PaymentSystem{
 }
 
 export class VISA extends PaymentSystem{
-    transaction(data: any[]=[]): void
+    transaction(data: any[]=[]): string
     {
-
+        return "OK";
     }
 }
 export class MASTERCARD extends PaymentSystem{
-    transaction(data: any[]=[]): void
+    transaction(data: any[]=[]): string
     {
-        
+        return "OK";
     }
 }

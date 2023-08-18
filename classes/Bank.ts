@@ -26,14 +26,31 @@ export class Bank{
     }
     sendData(data: any[]=[], bank: Bank): void
     {
-
+        bank.data=data;
     }
-    paymentRequest(data: any[]=[], paymentSystem: PaymentSystem ): void
+    paymentRequest(data: any[]=[]): void
     {
-
+        let paySys=data[0].paymentSystem;
+        paySys.data=data;
     }
     checkBalance(data: any[]=[]): string
     {
-        return;
+        let bank: Bank;
+        bank=data[0].issuerBank;
+        let cardNumber=data[0].number;
+        let userCardIndex=bank.cards.findIndex(crd=>crd.number==cardNumber);
+        let balance: number;
+        balance=bank.cards[userCardIndex].balance;
+        let amount:number;
+        amount=data[1];
+
+        if(balance>=amount)
+        {
+            return "Balance Ok";
+        }
+        else
+        {
+            return "Balabce is not enougth";
+        }
     }
 }

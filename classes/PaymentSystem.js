@@ -9,10 +9,12 @@ export class PaymentSystem {
 }
 export class VISA extends PaymentSystem {
     transaction(data = []) {
+        return "OK";
     }
 }
 export class MASTERCARD extends PaymentSystem {
     transaction(data = []) {
+        return "OK";
     }
 }
 //# sourceMappingURL=PaymentSystem.js.map

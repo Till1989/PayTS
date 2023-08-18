@@ -6,6 +6,7 @@ export class Card {
         this.paymentSystem = paymentSystem;
         this.issuerBank = issuerBank;
         this.customer = customer;
+        this.balance = 1000;
     }
 }
 //# sourceMappingURL=Card.js.map

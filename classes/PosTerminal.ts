@@ -7,8 +7,8 @@ export class POSTerminal{
     {
         this.bank=bank;
     }
-    senddata(data: any[]=[], bank: Bank): void
+    sendData(data: any[]=[]): void
     {
-        
+        this.bank.data=data;
     }
 }
