@@ -12,7 +12,7 @@ let reifBank = new Bank("ReiffeisenBank", "Ukraine");
 let visa = new VISA("VISA", "12345");
 let mastercard = new MASTERCARD("MASTERCARD", "98765");
 
-//let vasia = new User("Вася");
+let vasia = new User("Вася");
 let shop = new Business("Магазин");
 
 reifBank.addCard(new Card(456, 999, "5678", mastercard, reifBank, shop));
