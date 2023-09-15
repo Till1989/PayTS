@@ -10,7 +10,5 @@ import { Balance } from "classes/Objects.js";
 
 let bank = new Bank("1", "1", 1);
 
-let temp = Bala
-bank.balances.push()
 
 console.log(bank);
