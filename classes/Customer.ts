@@ -1,4 +1,4 @@
-import {POSTerminal} from "./POSTerminal.js";
+import {POSTerminal} from "./POSTerminal.js";////
 
 export class Customer {
     name: string;

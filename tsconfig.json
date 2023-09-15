@@ -12,6 +12,7 @@
       //"suppressImplicitAnyIndexErrors": true,
       "esModuleInterop": true,
       "resolveJsonModule": true,
-      "useDefineForClassFields": false
+      "useDefineForClassFields": false,
+      "forceConsistentCasingInFileNames": true
     }
   }
