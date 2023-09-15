@@ -5,10 +5,69 @@ import {Bank} from "./classes/Bank.js";
 import {PaymentSystem, MASTERCARD, VISA} from "./classes/PaymentSystem.js";
 import {POSTerminal} from "./classes/POSTerminal.js";
 import {Card} from "./classes/Card.js";
-import { Balance } from "classes/Objects.js";
+import { balance } from "./classes/Objects.js";
 
 
-let bank = new Bank("1", "1", 1);
+let bankID=0;
+let banks:Bank[]=[];
 
 
-console.log(bank);
+
+addBank("Reiff", "Ukraine");
+addBank("Private", "Ukraine");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function addBank(name: string, regCountry: string)
+{
+    let n = name;
+    let rC = regCountry;
+    banks.push(new Bank(n,rC,bankID));
+    bankID++;
+};
+
+
+
+
+
+
+
+
+
+
+console.log(banks);
+
+
+
+
+
+
+
+

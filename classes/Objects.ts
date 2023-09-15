@@ -1,4 +1,4 @@
-export interface Balance{
-    data: string;
-    balance: number;
+export let balance: { data: string, value: number}={
+    data: null,
+    value: null
 }

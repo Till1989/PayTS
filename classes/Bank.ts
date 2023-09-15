@@ -1,7 +1,6 @@
 import {Card} from "./Card.js";
 import {POSTerminal} from "./POSTerminal.js";
 import { Customer } from "./Customer.js";
-import { Balance } from "./Objects.js";
 export class Bank {
     name: string;
     regCountry: string;
