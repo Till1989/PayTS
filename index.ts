@@ -34,7 +34,7 @@ let busCard = reifBank.cards[busCardIndex];
 
 reifBank.cards[userCardIndex].balance = 4000;
 let data: any[] = [];
-data.push(userCard, 4000, busCard);
+data.push(userCard, 4000.000000001, busCard);
 
 /*************************************************************** */
 
