@@ -7,9 +7,13 @@ export class Customer {
     }
 }
 
-export class User extends Customer {}
+export class User extends Customer {
+    pass: string;
+    inn: string;
+}
 export class Business extends Customer {
-    POSTerminal: POSTerminal[] = [];
+    EDRPOU: number;
+    POSTerminal: POSTerminal[];
 
     addPOSTerminal(POSTerminal: POSTerminal): void {
         this.POSTerminal.push(POSTerminal);

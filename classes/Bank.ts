@@ -6,7 +6,7 @@ export class Bank {
     regCountry: string;
     bankIdentifier:number;
     cards: Card[] = [];
-    balances: Object[]=[];//!!!!!!!!!!!!!!!!!!!!!
+    balances: Object[];
     data: any[] = [];
     operResult: string;
     customers: Customer[];
