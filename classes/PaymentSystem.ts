@@ -2,12 +2,14 @@ import {Bank} from "./Bank.js";
 
 export abstract class PaymentSystem {
     name: string;
+    identifier:number;
     serverAdress: string;
     data: any[] = [];
     transResult: string;
-    constructor(name: string, serverAdress: string) {
+    constructor(name: string, serverAdress: string, identifier:number) {
         this.name = name;
         this.serverAdress = serverAdress;
+        this.identifier=identifier;
     }
     abstract transaction(data: any[]): string;
     returnResult(bank: Bank): void {
