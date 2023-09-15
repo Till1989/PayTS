@@ -12,13 +12,16 @@ let bankID=0;
 let banks:Bank[]=[];
 
 
-
-addBank("Reiff", "Ukraine");
 addBank("Private", "Ukraine");
+addBank("Reiff", "Ukraine");
+addBank("Reiff", "Switzerland");
 
 
 
 
+
+
+let id = selectBankIDbyNameCountry("Private", "Ukraine");
 
 
 
@@ -53,6 +56,28 @@ function addBank(name: string, regCountry: string)
     bankID++;
 };
 
+function selectBankIDbyNameCountry(name: string, regCountry: string): number {
+    let temp = [];
+    let tmp = [];
+    for(let i = 0; i<banks.length; i++)
+    {
+        if(banks[i].name===name)
+        {
+            temp.push(banks[i]);
+        }
+    }
+  
+    for(let i = 0; i<temp.length; i++)
+    {
+        if(temp[i].regCountry===regCountry)
+        {
+            tmp.push(temp[i]);
+        }
+    }
+
+
+    return tmp[0].bankIdentifier;
+}
 
 
 
@@ -62,7 +87,6 @@ function addBank(name: string, regCountry: string)
 
 
 
-console.log(banks);
 
 
 
