@@ -1,12 +1,11 @@
 export class Card {
-    constructor(number, cvv, expDate, paymentSystem, issuerBank, customer) {
+    constructor(number, cvv, expDate, paymentSystem, issuerBank, customerIdentifier) {
         this.number = number;
         this.cvv = cvv;
         this.expDate = expDate;
         this.paymentSystem = paymentSystem;
         this.issuerBank = issuerBank;
-        this.customer = customer;
-        this.balance = 1000;
+        this.customerIdentifier = customerIdentifier;
     }
 }
 //# sourceMappingURL=Card.js.map

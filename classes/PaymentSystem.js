@@ -1,8 +1,9 @@
 export class PaymentSystem {
-    constructor(name, serverAdress) {
+    constructor(name, serverAdress, identifier) {
         this.data = [];
         this.name = name;
         this.serverAdress = serverAdress;
+        this.identifier = identifier;
     }
     returnResult(bank) {
         bank.operResult = this.transResult;

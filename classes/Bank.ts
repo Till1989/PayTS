@@ -1,12 +1,13 @@
 import {Card} from "./Card.js";
 import {POSTerminal} from "./POSTerminal.js";
 import { Customer } from "./Customer.js";
+import { Balance } from "./Objects.js";
 export class Bank {
     name: string;
     regCountry: string;
     bankIdentifier:number;
     cards: Card[] = [];
-    balances: { string: number }[]=[];//!!!!!!!!!!!!!!!!!!!!!
+    balances: Object[]=[];//!!!!!!!!!!!!!!!!!!!!!
     data: any[] = [];
     operResult: string;
     customers: Customer[];
