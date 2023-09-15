@@ -6,7 +6,7 @@ import {PaymentSystem, MASTERCARD, VISA} from "./classes/PaymentSystem.js";
 import {POSTerminal} from "./classes/POSTerminal.js";
 import {Card} from "./classes/Card.js";
 
-let privatBank = new Bank("PrivatBank", "Ukraine");///////
+let privatBank = new Bank("PrivatBank", "Ukraine");
 let reifBank = new Bank("ReiffeisenBank", "Ukraine");
 
 let visa = new VISA("VISA", "12345");
