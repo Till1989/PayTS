@@ -1,22 +1,23 @@
 //LET PAY
 import { Bank } from "./classes/Bank.js";
 import { MASTERCARD, VISA } from "./classes/PaymentSystem.js";
+import { Card } from "./classes/Card.js";
 let bankID = 0;
 let banks = [];
 addBank("Private", "Ukraine");
 addBank("Reiff", "Ukraine");
 addBank("Reiff", "Switzerland");
-let paymentSystemID = 0;
-let paymentSystems = [];
-addPaymentSystem(new VISA("VISA", "3253253636jhgh", paymentSystemID));
-addPaymentSystem(new MASTERCARD("MASTERCARD", "546fyfce6646", paymentSystemID));
 banks[selectBankIDbyNameCountry("Private", "Ukraine")].addPersonCustomer("sefszd_zsdfsd", "er23438", 686865858);
 banks[selectBankIDbyNameCountry("Private", "Ukraine")].addPersonCustomer("qqqq_qqqq", "er23sefgr", 68645645);
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addBusinessCustomer("thdrthdrth", 7567567);
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addBusinessCustomer("o;l;i.io", 1212312312);
-console.log(banks);
-console.log(paymentSystems);
-/*************************************************************************************** */
+banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addCard(new Card(8888888888888888, 555, "1221", 0, selectBankIDbyNameCountry("Reiff", "Ukraine"), 0));
+//console.log(banks);
+let paymentSystemID = 0;
+let paymentSystems = [];
+addPaymentSystem(new VISA("VISA", "3253253636jhgh", paymentSystemID));
+addPaymentSystem(new MASTERCARD("MASTERCARD", "546fyfce6646", paymentSystemID));
+/*************************************functions********************************* */
 function addBank(name, regCountry) {
     let n = name;
     let rC = regCountry;

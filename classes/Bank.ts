@@ -1,12 +1,13 @@
 import { Card } from "./Card.js";
 import { POSTerminal } from "./POSTerminal.js";
 import { Customer, Person, Business } from "./Customer.js";
+import { balance } from "./Objects.js";
 export class Bank {
     name: string;
     regCountry: string;
     bankIdentifier: number;
     cards: Card[] = [];
-    balances: { data: string; value: number };
+    balances: { data: string; value: number }[] = [];
     data: any[] = [];
     //operResult: string;
     customers: Customer[] = [];
@@ -19,7 +20,6 @@ export class Bank {
 
     addPersonCustomer(name: string, pass: string, inn: number) {
         let id = 0;
-        console.log(this.customers.length);
         if (this.customers.length == 0) {
             id = 0;
         } else {
@@ -40,6 +40,12 @@ export class Bank {
 
     addCard(card: Card): void {
         this.cards.push(card);
+        let tmp: string = "";
+        tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
+
+        this.balances.de;
+
+        console.log(tmp);
     }
     /*
     retResToBank(bank: Bank, operResult: string): void {
