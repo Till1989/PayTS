@@ -1,4 +1,4 @@
-export let balance: { data: string; value: number } = {
-    data: null,
-    value: null,
+export type balance = {
+    data: string;
+    value: number;
 };

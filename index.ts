@@ -5,7 +5,7 @@ import { Bank } from "./classes/Bank.js";
 import { PaymentSystem, MASTERCARD, VISA } from "./classes/PaymentSystem.js";
 import { POSTerminal } from "./classes/POSTerminal.js";
 import { Card } from "./classes/Card.js";
-import { balance } from "./classes/Objects.js";
+// { balance } from "./classes/Objects.js";
 
 let bankID = 0;
 let banks: Bank[] = [];
@@ -25,6 +25,14 @@ let paymentSystemID = 0;
 let paymentSystems: PaymentSystem[] = [];
 addPaymentSystem(new VISA("VISA", "3253253636jhgh", paymentSystemID));
 addPaymentSystem(new MASTERCARD("MASTERCARD", "546fyfce6646", paymentSystemID));
+
+type balance = {
+    data: number;
+};
+const ihh: balance = {
+    data: 0,
+};
+ihh.data = 75757;
 
 /*************************************functions********************************* */
 function addBank(name: string, regCountry: string) {

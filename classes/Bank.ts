@@ -7,8 +7,8 @@ export class Bank {
     regCountry: string;
     bankIdentifier: number;
     cards: Card[] = [];
-    balances: { data: string; value: number }[] = [];
     data: any[] = [];
+    //balances;
     //operResult: string;
     customers: Customer[] = [];
 
@@ -40,12 +40,10 @@ export class Bank {
 
     addCard(card: Card): void {
         this.cards.push(card);
-        let tmp: string = "";
-        tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
+        //let tmp: string = "";
+        //tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
 
-        this.balances.de;
-
-        console.log(tmp);
+        //console.log(tmp);
     }
     /*
     retResToBank(bank: Bank, operResult: string): void {

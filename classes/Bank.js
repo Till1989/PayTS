@@ -2,8 +2,8 @@ import { Person, Business } from "./Customer.js";
 export class Bank {
     constructor(name, regCountry, bankIdentifier) {
         this.cards = [];
-        this.balances = [];
         this.data = [];
+        //balances;
         //operResult: string;
         this.customers = [];
         this.name = name;
@@ -32,10 +32,9 @@ export class Bank {
     }
     addCard(card) {
         this.cards.push(card);
-        let tmp = "";
-        tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
-        this.balances.de;
-        console.log(tmp);
+        //let tmp: string = "";
+        //tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
+        //console.log(tmp);
     }
     /*
     retResToBank(bank: Bank, operResult: string): void {

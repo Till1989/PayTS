@@ -1,5 +1,2 @@
-export let balance = {
-    data: null,
-    value: null,
-};
+export {};
 //# sourceMappingURL=Objects.js.map

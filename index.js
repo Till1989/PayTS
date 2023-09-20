@@ -2,6 +2,7 @@
 import { Bank } from "./classes/Bank.js";
 import { MASTERCARD, VISA } from "./classes/PaymentSystem.js";
 import { Card } from "./classes/Card.js";
+// { balance } from "./classes/Objects.js";
 let bankID = 0;
 let banks = [];
 addBank("Private", "Ukraine");
@@ -17,6 +18,10 @@ let paymentSystemID = 0;
 let paymentSystems = [];
 addPaymentSystem(new VISA("VISA", "3253253636jhgh", paymentSystemID));
 addPaymentSystem(new MASTERCARD("MASTERCARD", "546fyfce6646", paymentSystemID));
+const ihh = {
+    data: 0,
+};
+ihh.data = 75757;
 /*************************************functions********************************* */
 function addBank(name, regCountry) {
     let n = name;
