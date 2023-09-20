@@ -1,12 +1,12 @@
 import {Bank} from "./Bank";
 
 export class POSTerminal {
-    bank: Bank;
+    bankIdentifier: number;
     operResult: string;
-    constructor(bank: Bank) {
-        this.bank = bank;
+    constructor(bankIdentifier: number) {
+        this.bankIdentifier = bankIdentifier;
     }
-    sendData(data: any[] = []): void {
-        this.bank.data = data;
+    sendDataToBank(data: any[] = []): void {
+        //this.bank.data = data;
     }
 }

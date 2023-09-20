@@ -2,8 +2,10 @@ import {POSTerminal} from "./POSTerminal.js";////
 
 export class Customer {
     name: string;
-    constructor(name: string) {
+    identifier: number;
+    constructor(name: string,identifier: number) {
         this.name = name;
+        this.identifier=identifier;
     }
 }
 
@@ -13,9 +15,9 @@ export class User extends Customer {
 }
 export class Business extends Customer {
     EDRPOU: number;
-    POSTerminal: POSTerminal[];
+    POSTerminals: POSTerminal[]=[];
 
     addPOSTerminal(POSTerminal: POSTerminal): void {
-        this.POSTerminal.push(POSTerminal);
+        this.POSTerminals.push(POSTerminal);
     }
 }

@@ -4,11 +4,11 @@ import { Customer } from "./Customer.js";
 export class Bank {
     name: string;
     regCountry: string;
-    bankIdentifier:number;
+    bankIdentifier:number; 
     cards: Card[] = [];
-    balances: Object[];
+    balances: { data: string, value: number};
     data: any[] = [];
-    operResult: string;
+    //operResult: string;
     customers: Customer[];
 
 
@@ -17,11 +17,11 @@ export class Bank {
         this.regCountry = regCountry;
         this.bankIdentifier=bankIdentifier;
     }
-/*
+
     addCard(card: Card): void {
         this.cards.push(card);
     }
-
+/*
     retResToBank(bank: Bank, operResult: string): void {
         bank.operResult = operResult;
     }
@@ -33,13 +33,13 @@ export class Bank {
     sendData(data: any[] = [], bank: Bank): void {
         bank.data = data;
     }
-
+*/
     paymentRequest(data: any[] = []): void {
         let paySys = data[0].paymentSystem;
         paySys.data = data;
     }
 
     checkBalance(data: any[] = []): string {
-
-    }*/
+        return;
+    }
 }

@@ -13,7 +13,7 @@ export abstract class PaymentSystem {
     }
     abstract transaction(data: any[]): string;
     returnResult(bank: Bank): void {
-        bank.operResult = this.transResult;
+        //bank.operResult = this.transResult;
     }
 }
 

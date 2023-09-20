@@ -6,12 +6,12 @@ export class Card {
     number: number;
     cvv: number;
     expDate: string;
-    paymentSystem: PaymentSystem;
-    issuerBank: Bank;
+    paymentSystem: number;
+    issuerBank: number;
     customerIdentifier: number;
 
-    constructor(number: number, cvv: number, expDate: string, paymentSystem: PaymentSystem, 
-                issuerBank: Bank, customerIdentifier: number) {
+    constructor(number: number, cvv: number, expDate: string, paymentSystem: number, 
+                issuerBank: number, customerIdentifier: number) {
         this.number = number;
         this.cvv = cvv;
         this.expDate = expDate;
