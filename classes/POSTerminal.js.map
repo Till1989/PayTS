@@ -1,1 +1,1 @@
-{"version":3,"file":"POSTerminal.js","sourceRoot":"","sources":["POSTerminal.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,WAAW;IAGpB,YAAY,IAAU;QAClB,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACrB,CAAC;IACD,QAAQ,CAAC,OAAc,EAAE;QACrB,IAAI,CAAC,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IAC1B,CAAC;CACJ"}
+{"version":3,"file":"POSTerminal.js","sourceRoot":"","sources":["POSTerminal.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,WAAW;IAGpB,YAAY,cAAsB;QAC9B,IAAI,CAAC,cAAc,GAAG,cAAc,CAAC;IACzC,CAAC;IACD,cAAc,CAAC,OAAc,EAAE;QAC3B,wBAAwB;IAC5B,CAAC;CACJ"}

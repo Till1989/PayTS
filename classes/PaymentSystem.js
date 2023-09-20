@@ -6,7 +6,7 @@ export class PaymentSystem {
         this.identifier = identifier;
     }
     returnResult(bank) {
-        bank.operResult = this.transResult;
+        //bank.operResult = this.transResult;
     }
 }
 export class VISA extends PaymentSystem {

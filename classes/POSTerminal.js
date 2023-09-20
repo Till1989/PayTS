@@ -1,9 +1,9 @@
 export class POSTerminal {
-    constructor(bank) {
-        this.bank = bank;
+    constructor(bankIdentifier) {
+        this.bankIdentifier = bankIdentifier;
     }
-    sendData(data = []) {
-        this.bank.data = data;
+    sendDataToBank(data = []) {
+        //this.bank.data = data;
     }
 }
 //# sourceMappingURL=POSTerminal.js.map
