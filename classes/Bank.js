@@ -5,30 +5,33 @@ export class Bank {
         this.data = [];
         this.balances = [];
         //operResult: string;
-        this.customers = [];
+        this.personCustomers = [];
+        this.businessCustomers = [];
         this.name = name;
         this.regCountry = regCountry;
         this.bankIdentifier = bankIdentifier;
     }
-    addPersonCustomer(name, pass, inn) {
+    addPersonCustomer(name, pass, taxID) {
+        //add taxID length checking - 10 digits
         let id = 0;
-        if (this.customers.length == 0) {
+        if (this.personCustomers.length == 0) {
             id = 0;
         }
         else {
-            id = this.customers[this.customers.length - 1].identifier + 1;
+            id = this.personCustomers[this.personCustomers.length - 1].identifier + 1;
         }
-        this.customers.push(new Person(name, id, "hg8989779", 3334445551));
+        this.personCustomers.push(new Person(name, id, pass, taxID));
     }
-    addBusinessCustomer(name, EDRPOU) {
+    addBusinessCustomer(name, taxID) {
+        //add taxID length checking - 8 digits
         let id = 0;
-        if (this.customers.length == 0) {
+        if (this.businessCustomers.length == 0) {
             id = 0;
         }
         else {
-            id = this.customers[this.customers.length - 1].identifier + 1;
+            id = this.businessCustomers[this.businessCustomers.length - 1].identifier + 1;
         }
-        this.customers.push(new Business(name, id, 12345678));
+        this.businessCustomers.push(new Business(name, id, taxID));
     }
     addCard(card) {
         this.cards.push(card);

@@ -1,6 +1,7 @@
 export class POSTerminal {
-    constructor(bankIdentifier) {
+    constructor(bankIdentifier, cardNumber) {
         this.bankIdentifier = bankIdentifier;
+        this.cardNumber = cardNumber;
     }
     sendDataToBank(data = []) {
         //this.bank.data = data;

@@ -1,21 +1,20 @@
 export class Customer {
-    constructor(name, identifier) {
+    constructor(name, identifier, taxID) {
         this.name = name;
         this.identifier = identifier;
+        this.taxID = taxID;
     }
 }
 export class Person extends Customer {
-    constructor(name, identifier, pass, inn) {
-        super(name, identifier);
+    constructor(name, identifier, pass, taxID) {
+        super(name, identifier, taxID);
         this.pass = pass;
-        this.inn = inn;
     }
 }
 export class Business extends Customer {
-    constructor(name, identifier, EDRPOU) {
-        super(name, identifier);
+    constructor(name, identifier, taxID) {
+        super(name, identifier, taxID);
         this.POSTerminals = [];
-        this.EDRPOU = EDRPOU;
     }
     addPOSTerminal(POSTerminal) {
         this.POSTerminals.push(POSTerminal);

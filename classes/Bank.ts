@@ -9,7 +9,8 @@ export class Bank {
     data: any[] = [];
     balances: Object[] = [];
     //operResult: string;
-    customers: Customer[] = [];
+    personCustomers: Person[] = [];
+    businessCustomers: Business[] = [];
 
     constructor(name: string, regCountry: string, bankIdentifier: number) {
         this.name = name;
@@ -17,24 +18,26 @@ export class Bank {
         this.bankIdentifier = bankIdentifier;
     }
 
-    addPersonCustomer(name: string, pass: string, inn: number) {
+    addPersonCustomer(name: string, pass: string, taxID: number) {
+        //add taxID length checking - 10 digits
         let id = 0;
-        if (this.customers.length == 0) {
+        if (this.personCustomers.length == 0) {
             id = 0;
         } else {
-            id = this.customers[this.customers.length - 1].identifier + 1;
+            id = this.personCustomers[this.personCustomers.length - 1].identifier + 1;
         }
-        this.customers.push(new Person(name, id, "hg8989779", 3334445551));
+        this.personCustomers.push(new Person(name, id, pass, taxID));
     }
 
-    addBusinessCustomer(name: string, EDRPOU: number) {
+    addBusinessCustomer(name: string, taxID: number) {
+        //add taxID length checking - 8 digits
         let id = 0;
-        if (this.customers.length == 0) {
+        if (this.businessCustomers.length == 0) {
             id = 0;
         } else {
-            id = this.customers[this.customers.length - 1].identifier + 1;
+            id = this.businessCustomers[this.businessCustomers.length - 1].identifier + 1;
         }
-        this.customers.push(new Business(name, id, 12345678));
+        this.businessCustomers.push(new Business(name, id, taxID));
     }
 
     addCard(card: Card): void {
