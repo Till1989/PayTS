@@ -19,7 +19,7 @@ export class Bank {
     }
 
     addPersonCustomer(name: string, pass: string, taxID: number) {
-        //add taxID length checking - 10 digits
+        //add taxID length checking - 10 digits//add absolute id counter
         let id = 0;
         if (this.personCustomers.length == 0) {
             id = 0;
@@ -30,7 +30,7 @@ export class Bank {
     }
 
     addBusinessCustomer(name: string, taxID: number) {
-        //add taxID length checking - 8 digits
+        //add taxID length checking - 8 digits//add absolute id counter
         let id = 0;
         if (this.businessCustomers.length == 0) {
             id = 0;
