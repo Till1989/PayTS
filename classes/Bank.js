@@ -3,7 +3,7 @@ export class Bank {
     constructor(name, regCountry, bankIdentifier) {
         this.cards = [];
         this.data = [];
-        //balances;
+        this.balances = [];
         //operResult: string;
         this.customers = [];
         this.name = name;
@@ -32,8 +32,12 @@ export class Bank {
     }
     addCard(card) {
         this.cards.push(card);
-        //let tmp: string = "";
-        //tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
+        let tmp = "";
+        tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
+        let balance = { data: undefined, value: undefined };
+        balance.data = tmp;
+        balance.value = 0;
+        this.balances.push(balance);
         //console.log(tmp);
     }
     /*

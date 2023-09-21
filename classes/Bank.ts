@@ -1,14 +1,13 @@
 import { Card } from "./Card.js";
 import { POSTerminal } from "./POSTerminal.js";
 import { Customer, Person, Business } from "./Customer.js";
-import { balance } from "./Objects.js";
 export class Bank {
     name: string;
     regCountry: string;
     bankIdentifier: number;
     cards: Card[] = [];
     data: any[] = [];
-    //balances;
+    balances: Object[] = [];
     //operResult: string;
     customers: Customer[] = [];
 
@@ -40,9 +39,12 @@ export class Bank {
 
     addCard(card: Card): void {
         this.cards.push(card);
-        //let tmp: string = "";
-        //tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
-
+        let tmp: string = "";
+        tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
+        let balance: { data: string; value: number } = { data: undefined, value: undefined };
+        balance.data = tmp;
+        balance.value = 0;
+        this.balances.push(balance);
         //console.log(tmp);
     }
     /*

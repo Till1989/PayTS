@@ -2,7 +2,10 @@
 import { Bank } from "./classes/Bank.js";
 import { MASTERCARD, VISA } from "./classes/PaymentSystem.js";
 import { Card } from "./classes/Card.js";
-// { balance } from "./classes/Objects.js";
+let paymentSystemID = 0;
+let paymentSystems = [];
+addPaymentSystem(new VISA("VISA", "3253253636jhgh", paymentSystemID));
+addPaymentSystem(new MASTERCARD("MASTERCARD", "546fyfce6646", paymentSystemID));
 let bankID = 0;
 let banks = [];
 addBank("Private", "Ukraine");
@@ -12,16 +15,10 @@ banks[selectBankIDbyNameCountry("Private", "Ukraine")].addPersonCustomer("sefszd
 banks[selectBankIDbyNameCountry("Private", "Ukraine")].addPersonCustomer("qqqq_qqqq", "er23sefgr", 68645645);
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addBusinessCustomer("thdrthdrth", 7567567);
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addBusinessCustomer("o;l;i.io", 1212312312);
-banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addCard(new Card(8888888888888888, 555, "1221", 0, selectBankIDbyNameCountry("Reiff", "Ukraine"), 0));
-//console.log(banks);
-let paymentSystemID = 0;
-let paymentSystems = [];
-addPaymentSystem(new VISA("VISA", "3253253636jhgh", paymentSystemID));
-addPaymentSystem(new MASTERCARD("MASTERCARD", "546fyfce6646", paymentSystemID));
-const ihh = {
-    data: 0,
-};
-ihh.data = 75757;
+banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addCard(new Card(8888888888888888, 555, 1030, 0, selectBankIDbyNameCountry("Reiff", "Ukraine"), 0)); //business
+banks[selectBankIDbyNameCountry("Private", "Ukraine")].addCard(new Card(2222222222222222, 579, 1232, 1, selectBankIDbyNameCountry("Private", "Ukraine"), 0)); //person
+console.log(banks);
+//!!!!!!!!!!!!!!!!!!!!!
 /*************************************functions********************************* */
 function addBank(name, regCountry) {
     let n = name;
