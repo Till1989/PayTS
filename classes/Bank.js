@@ -3,7 +3,8 @@ export class Bank {
     constructor(name, regCountry, bankIdentifier) {
         this.cards = [];
         this.data = [];
-        this.balances = [];
+        //balances: Object[] = [];
+        this.balance = {};
         //operResult: string;
         this.personCustomers = [];
         this.businessCustomers = [];
@@ -12,7 +13,7 @@ export class Bank {
         this.bankIdentifier = bankIdentifier;
     }
     addPersonCustomer(name, pass, taxID) {
-        //add taxID length checking - 10 digits
+        //add taxID length checking - 10 digits//add absolute id counter
         let id = 0;
         if (this.personCustomers.length == 0) {
             id = 0;
@@ -23,7 +24,7 @@ export class Bank {
         this.personCustomers.push(new Person(name, id, pass, taxID));
     }
     addBusinessCustomer(name, taxID) {
-        //add taxID length checking - 8 digits
+        //add taxID length checking - 8 digits//add absolute id counter
         let id = 0;
         if (this.businessCustomers.length == 0) {
             id = 0;
@@ -35,13 +36,9 @@ export class Bank {
     }
     addCard(card) {
         this.cards.push(card);
-        let tmp = "";
-        tmp = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
-        let balance = { data: undefined, value: undefined };
-        balance.data = tmp;
-        balance.value = 0;
-        this.balances.push(balance);
-        //console.log(tmp);
+        let sefse = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
+        this.balance.sefse = 0;
+        //this.balances.push(balance);
     }
     /*
     retResToBank(bank: Bank, operResult: string): void {

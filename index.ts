@@ -31,8 +31,6 @@ banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].businessCustomers[selectBus
 
 //
 
-console.log(banks);
-
 //!!!!!!!!!!!!!!!!!!!!!
 
 /*************************************functions********************************* */

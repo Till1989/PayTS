@@ -20,7 +20,6 @@ banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addCard(new Card(8888888888
 banks[selectBankIDbyNameCountry("Private", "Ukraine")].addCard(new Card(2222222222222222, 579, 1232, 1, selectBankIDbyNameCountry("Private", "Ukraine"), 0)); //person
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].businessCustomers[selectBusinessCustomerByTaxID(banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].businessCustomers, 12123123)].addPOSTerminal(new POSTerminal(banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].bankIdentifier, 8888888888888888));
 //
-console.log(banks);
 //!!!!!!!!!!!!!!!!!!!!!
 /*************************************functions********************************* */
 function addBank(name, regCountry) {
