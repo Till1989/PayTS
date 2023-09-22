@@ -16,8 +16,8 @@ banks[selectBankIDbyNameCountry("Private", "Ukraine")].addPersonCustomer("sefszd
 banks[selectBankIDbyNameCountry("Private", "Ukraine")].addPersonCustomer("qqqq_qqqq", "er23sefgr", 6864564511);
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addBusinessCustomer("thdrthdrth", 75675678);
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addBusinessCustomer("o;l;i.io", 12123123);
-banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addCard(new Card(8888888888888888, 555, 1030, 0, selectBankIDbyNameCountry("Reiff", "Ukraine"), 0)); //business
-banks[selectBankIDbyNameCountry("Private", "Ukraine")].addCard(new Card(2222222222222222, 579, 1232, 1, selectBankIDbyNameCountry("Private", "Ukraine"), 0)); //person
+banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].addCard(new Card(8888888888888888, 555, 1030, 0, selectBankIDbyNameCountry("Reiff", "Ukraine"), 0), 986); //business
+banks[selectBankIDbyNameCountry("Private", "Ukraine")].addCard(new Card(2222222222222222, 579, 1232, 1, selectBankIDbyNameCountry("Private", "Ukraine"), 0), 9797678); //person
 banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].businessCustomers[selectBusinessCustomerByTaxID(banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].businessCustomers, 12123123)].addPOSTerminal(new POSTerminal(banks[selectBankIDbyNameCountry("Reiff", "Ukraine")].bankIdentifier, 8888888888888888));
 //
 //!!!!!!!!!!!!!!!!!!!!!
