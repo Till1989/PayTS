@@ -43,8 +43,10 @@ export class Bank {
 
     addCard(card: Card): void {
         this.cards.push(card);
-        let sefse = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
-        this.balance.data = 0;
+        //this.balance[card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier] = 364346;
+
+        this.balance[card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier] = 8978097808960;
+        console.log(this.balance);
         //this.balances.push(balance);
     }
     /*
