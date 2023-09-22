@@ -44,7 +44,7 @@ export class Bank {
     addCard(card: Card): void {
         this.cards.push(card);
         let sefse = card.number + "_" + card.cvv + "_" + card.expDate + "_" + card.paymentSystem + "_" + card.issuerBank + "_" + card.customerIdentifier;
-        this.balance.sefse = 0;
+        this.balance.data = 0;
         //this.balances.push(balance);
     }
     /*
